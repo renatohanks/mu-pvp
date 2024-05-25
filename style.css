@@ -1,0 +1,904 @@
+@import url('https://fonts.googleapis.com/css2?family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(8, 8, 8);
+}
+
+#container {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+
+    & .wallpaper {
+        position: relative;
+        width: 900px;
+        top: 4px;
+    }
+
+    & .menu {
+        display: flex;
+        border: solid 3px white;
+        justify-content: space-around;
+        font: bold 10pt Arial;
+        cursor: pointer;
+        padding: 4px 0;
+        list-style: none;
+        
+        border: none;
+        margin-top: 0px;
+        box-shadow: 1px 1px 6px black;
+    }
+
+    & .menu li:hover {
+        background-image: linear-gradient(rgb(255, 255, 255), rgb(32, 137, 185));
+        transition-duration: 0.5s;
+    }
+
+    & .menu li {
+        background-image: linear-gradient(rgb(255, 255, 255), rgb(154, 178, 189));
+        border: solid grey 1px;
+        color: rgb(0, 0, 0);
+        padding: 10px 38px ;
+        margin: -5px;
+    }
+}
+
+.corpo {
+    background-image: linear-gradient(rgb(255, 255, 255), rgb(154, 178, 189));
+    position: relative;
+    border-radius: 0 0 10px 10px;
+    height: 950px;
+    margin-bottom: 50px;
+    bottom: 3px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+}
+    
+.menu2 {
+    position: relative;
+    list-style: none;
+    top: 10px;
+    left: 10px;
+    width: 188px;
+    border-radius: 5px;
+    background: rgb(66, 61, 61);
+    height: 230px;
+    box-shadow: 1px 1px 6px black;
+}  
+
+.menu2 li {
+    position: relative;
+    cursor: pointer;
+    width: 180px;
+    padding: 10px 10px 10px 10px;
+    font: bold 10pt Arial;
+    background-image: linear-gradient(rgb(255, 255, 255), rgb(154, 178, 189));
+    margin: 4px;
+    margin-bottom: -2px;
+    border-radius: 2px;
+    top: 5px;
+}
+
+.menu2 li:hover {
+    background-image: linear-gradient(rgb(255, 255, 255), rgb(32, 137, 185));
+}
+
+#vid {
+    position: absolute;
+    top: 11px;
+    left: 220px;
+    background: white;
+    padding: 8px;
+    border-radius: 4px;
+    background-image: linear-gradient(rgb(255, 255, 255), rgb(154, 178, 189));
+    box-shadow: 1px 1px 6px black;
+}
+
+.video {
+    border: solid 1px grey;
+}
+
+.server {
+    position: relative;
+    top: 20px;
+    left: 10px;
+    width: 188px;
+    height: 55px;
+    background: white;
+    background-image: url(imagens/server.jpg);
+    border-radius: 6px 6px 0 0;
+
+    & p {
+        position: relative;
+        color: white;
+        text-align: center;
+        top: 10px;
+        font: bold 8pt Arial;
+        top: 15px;
+    }
+
+    & span {
+        font: bold 8pt;
+        color: green;
+    }
+}
+
+.top1 {
+    background: white;
+    border-radius: 3px;
+    position: relative;
+    left: 220px;
+    top: 54px;
+    height: 160px;
+    width: 120px;
+    background-image: linear-gradient(rgb(255, 255, 255), rgb(154, 178, 189));
+    box-shadow: 1px 1px 6px black;
+
+
+    & img {
+        position: relative;
+        left: 10px;
+        width: 100px;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+
+    & .top {
+        font: bold 10pt Arial;
+        text-align: center;
+        padding: 8px;
+
+        & span {
+            color: red;
+        }
+    }
+
+    & .player1 {
+        position: relative;
+        padding-right: 8px;
+        text-align: right;
+        font: bold 10pt Arial;
+        cursor: pointer;
+        right: 4px;
+        top: 3px;
+    }
+
+    & .player1:hover {
+        color: red;
+    }
+
+
+}
+
+.top2 {
+    background: white;
+    border-radius: 3px;
+    position: relative;
+    left: 355px;
+    top: -106px;
+    height: 160px;
+    width: 120px;
+    background-image: linear-gradient(rgb(255, 255, 255), rgb(154, 178, 189));
+    box-shadow: 1px 1px 6px black;
+
+    & img {
+        position: relative;
+        left: 10px;
+        width: 100px;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+
+    & .top {
+        font: bold 10pt Arial;
+        text-align: center;
+        padding: 8px;
+
+        & span {
+            color: red;
+        }
+    }
+
+    & .player2 {
+        position: relative;
+        padding-right: 8px;
+        text-align: right;
+        font: bold 10pt Arial;
+        cursor: pointer;
+        right: 4px;
+        top: 3px;
+    }
+
+    & .player2:hover {
+        color: red;
+    }
+}
+
+.top3 {
+    background: white;
+    border-radius: 3px;
+    position: relative;
+    left: 490px;
+    top: -266px;
+    height: 160px;
+    width: 120px;
+    background-image: linear-gradient(rgb(255, 255, 255), rgb(154, 178, 189));
+    box-shadow: 1px 1px 6px black;
+
+    & img {
+        position: relative;
+        left: 10px;
+        width: 100px;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+
+    & .top {
+        font: bold 10pt Arial;
+        text-align: center;
+        padding: 8px;
+
+        & span {
+            color: red;
+        }
+    }
+
+    & .player3 {
+        position: relative;
+        padding-right: 8px;
+        text-align: right;
+        font: bold 10pt Arial;
+        cursor: pointer;
+        right: 4px;
+        top: 3px;
+    }
+
+    & .player3:hover {
+        color: red;
+    }
+}
+
+.top4 {
+    background: white;
+    border-radius: 3px;
+    position: relative;
+    left: 625px;
+    top: -426px;
+    height: 160px;
+    width: 120px;
+    background-image: linear-gradient(rgb(255, 255, 255), rgb(154, 178, 189));
+    box-shadow: 1px 1px 6px black;
+
+    & img {
+        position: relative;
+        left: 10px;
+        width: 100px;
+        cursor: pointer;
+        border-radius: 3px;
+    }
+
+    & .top {
+        font: bold 10pt Arial;
+        text-align: center;
+        padding: 8px;
+
+        & span {
+            color: red;
+        }
+    }
+
+    & .player4 {
+        position: relative;
+        padding-right: 8px;
+        text-align: right;
+        font: bold 10pt Arial;
+        cursor: pointer;
+        right: 4px;
+        top: 3px;
+    }
+
+    & .player4:hover {
+        color: red;
+    }
+}
+
+.top5 {
+    background: white;
+    border-radius: 3px;
+    position: relative;
+    left: 760px;
+    top: -587px;
+    height: 160px;
+    width: 120px;
+    background-image: linear-gradient(rgb(255, 255, 255), rgb(154, 178, 189));
+    box-shadow: 1px 1px 6px black;
+
+    & img {
+        position: relative;
+        left: 10px;
+        width: 100px;
+        cursor: pointer;
+        border-radius: 3px;
+    }
+
+    & .top {
+        font: bold 10pt Arial;
+        text-align: center;
+        padding: 8px;
+
+        & span {
+            color: red;
+        }
+    }
+
+    & .player5 {
+        position: relative;
+        padding-right: 8px;
+        text-align: right;
+        font: bold 10pt Arial;
+        cursor: pointer;
+        right: 4px;
+        top: 3px;
+    }
+
+    & .player5:hover {
+        color: red;
+    }
+}
+
+
+.att {
+    position: relative;
+    top: -575px;
+    background: white;
+    text-align: center;
+    width: 660px;
+    left: 220px;
+    border-radius: 3px;
+    padding: 2px 0 2px 0;
+
+    & p {
+        font: normal 10pt Arial;
+    }
+     & span {
+        font: bold 10pt Arial;
+     }
+}
+
+.rankings {
+    border-radius: 3px;
+    position: relative;
+    left: 240px;
+    top: -485px;
+    height: 280px;
+    width: 290px;
+    background-image: linear-gradient(rgb(255, 255, 255), rgb(154, 178, 189));
+    box-shadow: 1px 1px 6px black;
+
+    & .title {
+        position: relative;
+        left: 10px;
+        font: 800 20pt "Sansita";
+        padding: 8px;
+    }
+
+    & span {
+        font: bold 14pt "Sansita";
+    }
+
+    & .player6 {
+        position: relative;
+        padding-right: 8px;
+        text-align: right;
+        font: bold 10pt Arial;
+        cursor: pointer;
+        right: 4px;
+        top: 3px;
+    }
+
+    & .player6:hover {
+        color: red;
+    }
+
+    & .placar {
+        position: relative;
+
+        & .a1 {
+            position: relative;
+            font: bold 11pt "Sansita";
+            left: 17px;
+            top: 2px;
+            color: rgb(99, 93, 93);
+        }
+        & .a2 {
+            position: relative;
+            font: bold 12pt "Sansita";
+            left: 50px;
+            top: -17px;
+            color: rgb(99, 93, 93);
+        }
+
+        & .a3 {
+            position: relative;
+            font: bold 12pt "Sansita";
+            left: 200px;
+            top: -35px;
+            color: rgb(99, 93, 93);
+        }   
+    
+    }
+}
+
+.line01 {
+    position: relative;
+    width: 260px;
+    left: 17px;
+}
+
+.line02 {
+    position: relative;
+    width: 260px;
+    left: 17px;
+    top: -30px;
+}
+
+& .placar01 {
+    position: relative;
+    top: -30px;
+
+    & .a1 {
+        position: relative;
+        font: bold 13pt "Sansita";
+        left: 17px;
+        top: 6px;
+    }
+    & .a2 {
+        position: relative;
+        font: bold 13pt "Sansita";
+        left: 50px;
+        top: -16px;
+    }
+
+    & .a3 {
+        position: relative;
+        font: bold 13pt "Sansita";
+        left: 200px;
+        top: -37px;
+    }
+}
+
+.placar02 {
+    position: relative;
+    top: -60px;
+
+    & .a1 {
+        position: relative;
+        font: bold 13pt "Sansita";
+        left: 17px;
+        top: 6px;
+    }
+    & .a2 {
+        position: relative;
+        font: bold 13pt "Sansita";
+        left: 50px;
+        top: -16px;
+    }
+
+    & .a3 {
+        position: relative;
+        font: bold 13pt "Sansita";
+        left: 200px;
+        top: -37px;
+    }
+}
+
+.placar03 {
+    position: relative;
+    top: -90px;
+
+    & .a1 {
+        position: relative;
+        font: bold 13pt "Sansita";
+        left: 17px;
+        top: 6px;
+    }
+    & .a2 {
+        position: relative;
+        font: bold 13pt "Sansita";
+        left: 50px;
+        top: -16px;
+    }
+
+    & .a3 {
+        position: relative;
+        font: bold 13pt "Sansita";
+        left: 200px;
+        top: -37px;
+    }
+}
+
+.placar04 {
+    position: relative;
+    top: -120px;
+
+    & .a1 {
+        position: relative;
+        font: bold 13pt "Sansita";
+        left: 17px;
+        top: 6px;
+    }
+    & .a2 {
+        position: relative;
+        font: bold 13pt "Sansita";
+        left: 50px;
+        top: -16px;
+    }
+
+    & .a3 {
+        position: relative;
+        font: bold 13pt "Sansita";
+        left: 200px;
+        top: -37px;
+    }
+}
+
+.placar05 {
+    position: relative;
+    top: -150px;
+
+    & .a1 {
+        position: relative;
+        font: bold 13pt "Sansita";
+        left: 17px;
+        top: 6px;
+    }
+    & .a2 {
+        position: relative;
+        font: bold 13pt "Sansita";
+        left: 50px;
+        top: -16px;
+    }
+
+    & .a3 {
+        position: relative;
+        font: bold 13pt "Sansita";
+        left: 200px;
+        top: -37px;
+    }
+
+    & i {
+        position: absolute;
+        left: 135px;
+        top: 40px;
+        cursor: pointer;
+    }
+}
+
+.rankingsguild {
+    border-radius: 3px;
+    position: relative;
+    left: 570px;
+    top: -765px;
+    height: 280px;
+    width: 290px;
+    background-image: linear-gradient(rgb(255, 255, 255), rgb(154, 178, 189));
+    box-shadow: 1px 1px 6px black;
+
+    & .title {
+        position: relative;
+        left: 10px;
+        font: 800 20pt "Sansita";
+        padding: 8px;
+    }
+
+    & span {
+        font: bold 14pt "Sansita";
+    }
+
+    & .player6 {
+        position: relative;
+        padding-right: 8px;
+        text-align: right;
+        font: bold 10pt Arial;
+        cursor: pointer;
+        right: 4px;
+        top: 3px;
+    }
+
+    & .player6:hover {
+        color: red;
+    }
+
+    & .placar {
+        position: relative;
+
+        & .a1 {
+            position: relative;
+            font: bold 11pt "Sansita";
+            left: 17px;
+            top: 2px;
+            color: rgb(99, 93, 93);
+        }
+        & .a2 {
+            position: relative;
+            font: bold 12pt "Sansita";
+            left: 50px;
+            top: -17px;
+            color: rgb(99, 93, 93);
+        }
+
+        & .a3 {
+            position: relative;
+            font: bold 12pt "Sansita";
+            left: 200px;
+            top: -35px;
+            color: rgb(99, 93, 93);
+        }   
+    
+    }
+}
+
+.line01 {
+    position: relative;
+    width: 260px;
+    left: 17px;
+}
+
+.line02 {
+    position: relative;
+    width: 260px;
+    left: 17px;
+    top: -30px;
+}
+
+& .placar01 {
+    position: relative;
+    top: -30px;
+
+    & .a1 {
+        position: relative;
+        font: bold 13pt "Sansita";
+        left: 17px;
+        top: 6px;
+    }
+    & .a2 {
+        position: relative;
+        font: bold 13pt "Sansita";
+        left: 50px;
+        top: -16px;
+    }
+
+    & .a3 {
+        position: relative;
+        font: bold 13pt "Sansita";
+        left: 200px;
+        top: -37px;
+        color: rgb(243, 36, 36);
+    }
+}
+
+.placar02 {
+    position: relative;
+    top: -60px;
+
+    & .a1 {
+        position: relative;
+        font: bold 13pt "Sansita";
+        left: 17px;
+        top: 6px;
+    }
+    & .a2 {
+        position: relative;
+        font: bold 13pt "Sansita";
+        left: 50px;
+        top: -16px;
+    }
+
+    & .a3 {
+        position: relative;
+        font: bold 13pt "Sansita";
+        left: 200px;
+        top: -37px;
+        color: rgb(243, 36, 36);
+    }
+}
+
+.placar03 {
+    position: relative;
+    top: -90px;
+
+    & .a1 {
+        position: relative;
+        font: bold 13pt "Sansita";
+        left: 17px;
+        top: 6px;
+    }
+    & .a2 {
+        position: relative;
+        font: bold 13pt "Sansita";
+        left: 50px;
+        top: -16px;
+    }
+
+    & .a3 {
+        position: relative;
+        font: bold 13pt "Sansita";
+        left: 200px;
+        top: -37px;
+        color: rgb(243, 36, 36);
+    }
+}
+
+.placar04 {
+    position: relative;
+    top: -120px;
+
+    & .a1 {
+        position: relative;
+        font: bold 13pt "Sansita";
+        left: 17px;
+        top: 6px;
+    }
+    & .a2 {
+        position: relative;
+        font: bold 13pt "Sansita";
+        left: 50px;
+        top: -16px;
+    }
+
+    & .a3 {
+        position: relative;
+        font: bold 13pt "Sansita";
+        left: 200px;
+        top: -37px;
+        color: rgb(243, 36, 36);
+    }
+}
+
+.placar05 {
+    position: relative;
+    top: -150px;
+
+    & .a1 {
+        position: relative;
+        font: bold 13pt "Sansita";
+        left: 17px;
+        top: 6px;
+    }
+    & .a2 {
+        position: relative;
+        font: bold 13pt "Sansita";
+        left: 50px;
+        top: -16px;
+    }
+
+    & .a3 {
+        position: relative;
+        font: bold 13pt "Sansita";
+        left: 200px;
+        top: -37px;
+        color: rgb(243, 36, 36);
+    }
+
+    & i {
+        position: absolute;
+        left: 135px;
+        top: 40px;
+        cursor: pointer;
+    }
+}
+
+.fold {
+    position: absolute;
+    top: 540px;
+    left: 220px;
+    background: white;
+
+    & img {
+        position: absolute;
+        width: 660px;
+        border-radius: 6px;
+    }
+}
+
+.persona01 {
+    position: absolute;
+    width: 70px;
+    left: 225px;
+    top: -20px;
+}
+
+.persona02 {
+    position: absolute;
+    width: 60px;
+    left: 220px;
+    top: -24px;
+}
+
+.banner {
+    position: absolute;
+
+    & .ban {
+        position: absolute;
+        width: 188px;
+        border-radius: 6px;
+        left: 10px;
+        top: 30px;
+        box-shadow: 1px 1px 6px black;
+    }
+
+    & .btn {
+        position: absolute;
+        top: 250px;
+        left: 30px;
+        width: 150px;
+        height: 40px;
+        border: none;
+        border-radius: 6px;
+        font: bold 12pt "Sansita";
+        cursor: pointer;
+        padding-bottom: 3px;
+        background: rgb(207, 53, 53);
+        color: white;
+        box-shadow: 1px 1px 6px rgb(0, 0, 0);
+    }
+
+    & .btn:hover {
+        background: white;
+        color: red;
+        transition: 0.6s linear;
+    }
+
+    & .download {
+        position: absolute;
+        width: 188px;
+        left: 10px;
+        top: 420px;
+        border-radius: 6px;
+        box-shadow: 1px 1px 6px rgb(0, 0, 0);
+    }
+
+    & .elf {
+        position: absolute;
+        width: 180px;
+        top: 390px;
+        left: 10px;
+    }
+
+    & .btn2 {
+        position: absolute;
+        width: 130px;
+        height: 40px;
+        top: 550px;
+        left: 39px;
+        border: none;
+        border-radius: 6px;
+        font: bold 12pt "Sansita";
+        cursor: pointer;
+        padding-bottom: 3px;
+        background: rgb(207, 53, 53);
+        color: white;
+        box-shadow: 1px 1px 6px rgb(0, 0, 0);
+    }
+
+    & .btn2:hover {
+        background: white;
+        color: red;
+        transition: 0.6s linear;
+    }
+
+    & .down {
+        position: absolute;
+        top: 500px;
+        color: rgb(255, 255, 255);
+        left: 41px;
+        z-index: 1;
+        font: 800 17pt "Sansita";
+    }
+}
