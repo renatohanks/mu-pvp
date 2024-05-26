@@ -984,7 +984,11 @@ body {
         overflow: hidden;
         
         & .menu a {
-        padding: 10px 50px;
+            border: solid grey 1px;
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+            padding: 10px 39px;
+            margin: -5px;
         }
 }
 
