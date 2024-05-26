@@ -5,12 +5,15 @@
     box-sizing: border-box;
 }
 
+html {
+    overflow: hidden;
+}
+
 body {
     background: rgb(8, 8, 8);
     position: absolute;    
     margin: -135px;
     top: 150px;
-    overflow: hidden;
 }
 
 #container {
