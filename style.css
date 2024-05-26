@@ -5,6 +5,12 @@
     box-sizing: border-box;
 }
 
+html, body {
+    width: 100%;
+    max-width: 100vw;
+    height: 100%;
+}
+
 body {
     background: rgb(8, 8, 8);
 
@@ -12,13 +18,8 @@ body {
 
 #container {
     position: absolute;
-    left: 5px;
-    top: 30px;
-    transform: scale(1.3);
-    transform-origin: 0 0;
-    -webkit-transform: scale(1.3);
-    -webkit-transform-origin: 0 0;
-    overflow: hidden;
+    left: 45%;
+    transform: translate(-43%);
     
     & .wallpaper {
         position: relative;
@@ -907,4 +908,24 @@ body {
         z-index: 1;
         font: 800 17pt "Sansita";
     }
+}
+
+@media (max-width: 800px) {
+    #container {
+        position: absolute;
+        left: -5px;
+        top: 10px;
+        padding: 30px;
+        transform: scale(1.7);
+        transform-origin: 0 0;
+        webkit-transform: scale(1.7);
+        webkit-transform-origin: 0 0;
+        overflow: hidden;
+    }
+}
+
+.footer {
+    color: white;
+    text-align: center;
+    font: normal 12pt "Sansita";
 }
