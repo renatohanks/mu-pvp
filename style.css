@@ -19,6 +19,7 @@ body {
 #container {
     position: absolute;
     left: 45%;
+    top: 10px;
     transform: translate(-43%);
     
     & .wallpaper {
@@ -927,5 +928,6 @@ body {
 .footer {
     color: white;
     text-align: center;
-    font: normal 12pt "Sansita";
+    font: normal 12pt Arial;
+    padding-bottom: 10px;
 }
