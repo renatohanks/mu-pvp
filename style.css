@@ -984,10 +984,10 @@ body {
         overflow: hidden;
         
         & .menu a {
-            border: solid grey 1px;
+            border: solid grey 0.5px;
             text-decoration: none;
             color: rgb(0, 0, 0);
-            padding: 10px 50px;
+            padding: 5px 30px;
         }
 }
 
