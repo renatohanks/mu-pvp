@@ -13,7 +13,6 @@ html, body {
 
 body {
     background: rgb(8, 8, 8);
-
 }
 
 #container {
@@ -21,7 +20,7 @@ body {
     left: 45%;
     top: 10px;
     transform: translate(-43%);
-    
+
     & .wallpaper {
         position: relative;
         width: 900px;
@@ -30,7 +29,7 @@ body {
 
     & .menu {
         display: flex;
-        border: solid 0.5px white;
+        border: solid 3px white;
         justify-content: space-around;
         font: bold 10pt Arial;
         padding: 4px 0;
@@ -40,16 +39,17 @@ body {
         box-shadow: 1px 1px 6px black;
     }
 
-    & .menu li:hover {
+    & .menu a:hover {
         background-image: linear-gradient(rgb(255, 255, 255), rgb(32, 137, 185));
         transition-duration: 0.5s;
     }
 
-    & .menu li {
+    & .menu a {
         background-image: linear-gradient(rgb(255, 255, 255), rgb(154, 178, 189));
-        border: solid grey 0.5px;
+        border: solid grey 1px;
+        text-decoration: none;
         color: rgb(0, 0, 0);
-        padding: 10px 40px ;
+        padding: 10px 39px ;
         margin: -5px;
         cursor: pointer;
     }
@@ -75,7 +75,7 @@ body {
     width: 188px;
     border-radius: 5px;
     background: rgb(66, 61, 61);
-    height: 231px;
+    height: 230px;
     box-shadow: 1px 1px 6px black;
 }  
 
@@ -90,10 +90,17 @@ body {
     margin-bottom: -2px;
     border-radius: 2px;
     top: 5px;
+    text-decoration: none;
 }
 
 .menu2 li:hover {
     background-image: linear-gradient(rgb(255, 255, 255), rgb(32, 137, 185));
+}
+
+.menu2 li a {
+    text-decoration: none;
+    color: black;
+    font: bold 10pt Arial;
 }
 
 #vid {
@@ -890,8 +897,11 @@ body {
         cursor: pointer;
         padding-bottom: 3px;
         background: rgb(207, 53, 53);
-        color: white;
         box-shadow: 1px 1px 6px rgb(0, 0, 0);
+    }
+
+    & #btn3 i {
+        color: white;
     }
 
     & .btn2:hover {
@@ -908,6 +918,57 @@ body {
         z-index: 1;
         font: 800 17pt "Sansita";
     }
+}
+
+
+.banner-eventos {
+    position: absolute;
+    width: 650px;
+    left: 220px;
+    top: -10px;
+}
+
+.bn1 {
+    position: absolute;
+    left: 460px;
+    top: 400px;
+    padding: 20px;
+    border-radius: 8px;
+    border-style: none;
+    cursor: pointer;
+    background: #4587F4;
+    font: bold 10pt Arial;
+    color: white;
+}
+
+.bn1:hover {
+    background: red;
+    color:white;
+    transition: 0.5s linear;
+}
+
+.bn2{
+    position: absolute;
+    left: 455px;
+    top: 610px;
+    padding: 20px;
+    border-radius: 8px;
+    border-style: none;
+    cursor: pointer;
+    background: #ff0000;
+    font: bold 10pt Arial;
+    color: white;
+}
+
+.bn2:hover {
+    background: #4587F4;
+    color:white;
+    transition: 0.5s linear;
+}
+
+.download button a {
+    text-decoration: none;
+    color: white;
 }
 
 @media (max-width: 800px) {
