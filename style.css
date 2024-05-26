@@ -30,12 +30,11 @@ body {
 
     & .menu {
         display: flex;
-        border: solid 3px white;
+        border: solid 0.5px white;
         justify-content: space-around;
         font: bold 10pt Arial;
         padding: 4px 0;
         list-style: none;
-        
         border: none;
         margin-top: 0px;
         box-shadow: 1px 1px 6px black;
@@ -48,7 +47,7 @@ body {
 
     & .menu li {
         background-image: linear-gradient(rgb(255, 255, 255), rgb(154, 178, 189));
-        border: solid grey 1px;
+        border: solid grey 0.5px;
         color: rgb(0, 0, 0);
         padding: 10px 40px ;
         margin: -5px;
