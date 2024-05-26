@@ -982,16 +982,12 @@ body {
         webkit-transform: scale(1.7);
         webkit-transform-origin: 0 0;
         overflow: hidden;
-
-        & .menu {
-            z-index: 2;
-        }
         
         & .menu a {
             border: solid grey 0.5px;
             text-decoration: none;
             color: rgb(0, 0, 0);
-            padding: 5px 30px;
+            padding: 20px 30px;
         }
 }
 
