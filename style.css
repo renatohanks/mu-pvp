@@ -986,7 +986,7 @@ body {
         & .menu a {
             border: solid grey 0.5px;
             text-decoration: none;
-            color: rgb(0, 0, 0);
+            color: white;
             padding: 20px 30px;
         }
 }
