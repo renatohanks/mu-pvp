@@ -982,6 +982,10 @@ body {
         webkit-transform: scale(1.7);
         webkit-transform-origin: 0 0;
         overflow: hidden;
+
+        & .menu {
+            z-index: 1;
+        }
         
         & .menu a {
             border: solid grey 0.5px;
