@@ -21,6 +21,8 @@ body {
     left: 150px;
     transform: scale(1.8);
     transform-origin: 0 0;
+    -webkit-transform: scale(1.8);
+    -webkit-transform-origin: 0 0;
     
     & .wallpaper {
         position: relative;
