@@ -982,10 +982,10 @@ body {
         webkit-transform: scale(1.7);
         webkit-transform-origin: 0 0;
         overflow: hidden;
-    }
 
-    .menu a {
+        & .menu a {
         padding: 10px 50px;
+
     }
 }
 
