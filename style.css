@@ -7,18 +7,13 @@
 
 body {
     background: rgb(8, 8, 8);
-    position: absolute;    
-    margin: -135px;
-    top: 150px;
+
 }
 
 #container {
     position: absolute;
-    left: 150px;
-    transform: scale(1.0);
-    transform-origin: 0 0;
-    -webkit-transform: scale(1.0);
-    -webkit-transform-origin: 0 0;
+    left: 190px;
+
     
     & .wallpaper {
         position: relative;
