@@ -971,7 +971,7 @@ body {
     color: white;
 }
 
-@media (max-width: 812px) {
+@media (max-width: 700px) {
     #container {
         position: absolute;
         left: -5px;
