@@ -932,7 +932,7 @@ body {
 .bn1 {
     position: absolute;
     left: 460px;
-    top: 400px;
+    top: 370px;
     padding: 20px;
     border-radius: 8px;
     border-style: none;
@@ -951,7 +951,7 @@ body {
 .bn2{
     position: absolute;
     left: 455px;
-    top: 610px;
+    top: 560px;
     padding: 20px;
     border-radius: 8px;
     border-style: none;
