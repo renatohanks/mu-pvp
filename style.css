@@ -990,6 +990,10 @@ body {
             color: black;
             padding: 10px 41px;
         }
+
+        & menu2 {
+            height: 156px;
+        }
 }
 
 .footer {
