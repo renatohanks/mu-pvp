@@ -979,7 +979,7 @@ body {
         padding: 30px;
         transform: scale(1.7);
         transform-origin: 0 0;
-        webkit-transform: scale(1.7);
+        webkit-transform: scale(1.0);
         webkit-transform-origin: 0 0;
         overflow: hidden;
         
