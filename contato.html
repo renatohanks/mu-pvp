@@ -31,19 +31,44 @@
                 </div>
                 <div class="banner">
                     <img class="ban" src="imagens/banner.png">
-                    <button class="btn" type="button"><a href="gift-code.html" style="text-decoration: none; color: black;">Obter</a></button>
+                    <button class="btn" type="button">Pegar</button>
                     <img class="download" src="imagens/download.png">
                     <p class="down">DOWNLOAD</p>
                     <img class="elf" src="imagens/elf.png">
-                    <button class="btn2" type="button"><a href="https://www.mediafire.com/file/sb0bwib4y5eejgq/MU-PVPv8BR.apk/file" style="color: black;" target="_blank"><i id="btn3" class="fa-solid fa-download"></i></a></button>
+                    <button class="btn2" type="button"><i class="fa-solid fa-download"></i></button>
                 </div>
                 <div>
-                    <img class="banner-eventos" src="imagens/eventos.png">
+                    <form action="https://api.staticforms.xyz/submit" method="POST">
+                        <label>
+                            <p class="duvidas">DUVIDAS, SUGESTÕES OU BUG'S, DEIXEM UM E-MAIL ABAIXO:</p>
+                            <p>
+                                <input type="text" name="name" placeholder="Nick *" required>
+                            </p>
+                            <p>
+                                <input type="text" name="name" placeholder="Login *" required>
+                            </p>
+                            <p>
+                                <input type="email" name="email" placeholder="Email *" required>
+                            </p>
+                            <p>
+                                <select type="text" name="options">
+                                    <option value="selectoption">Selecione uma opção *</option>
+                                    <option value="duvida">Dúvida</option>
+                                    <option value="sugestão">Sugestão</option>
+                                    <option value="elogio">Elogio</option>
+                                    <option value="reclamação">Reclamações</option>
+                                    <option value="outros">Outros</option>
+                                </select>
+                            </p>
+                            <p>
+                                <textarea name="message" id="message" cols="30" rows="10" placeholder="Digite sua mensagem aqui *" style="resize: vertical;"></textarea>
+                            </p>
+                            <button class="sendmsg" type="submit">Enviar Mensagem</button>
+                            <input type="hidden" name="accessKey" value="41d274f7-53c0-4457-ab79-650abf920682">
+                            <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/obrigado.html">
+                    </form>
                 </div>
         </div>
-        <p class="footer" 
-
-style="color: white; text-align: center; font: normal 12pt Arial; padding-bottom: 10px;">&copy 2024 MuPvp | AllRights Reserved. | pvpgamesdevoloped | MuPVP - Locaweb</p>
     </div>
 <script src="https://kit.fontawesome.com/76c4e46cd9.js" crossorigin="anonymous"></script>
 <script src="script.js"></script>
