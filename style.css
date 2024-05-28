@@ -992,6 +992,9 @@ body {
         & menu2 {
             height: 140px;
         }
+    .obg h1 {
+        left: 265px;
+    }
 }
 
 .footer {
