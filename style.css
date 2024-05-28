@@ -990,7 +990,7 @@ body {
         }
 
         & menu2 {
-            height: 135px;
+            height: 140px;
         }
 }
 
@@ -1001,7 +1001,7 @@ body {
     padding-bottom: 10px;
 }
     
-form {
+.formu {
     position: absolute;
     left: 250px;
     top: 90px;
