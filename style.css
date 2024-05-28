@@ -148,7 +148,7 @@ body {
     border-radius: 3px;
     position: relative;
     left: 220px;
-    top: 54px;
+    top: 130px;
     height: 160px;
     width: 120px;
     background-image: linear-gradient(rgb(255, 255, 255), rgb(154, 178, 189));
@@ -195,7 +195,7 @@ body {
     border-radius: 3px;
     position: relative;
     left: 355px;
-    top: -106px;
+    top: -30px;
     height: 160px;
     width: 120px;
     background-image: linear-gradient(rgb(255, 255, 255), rgb(154, 178, 189));
@@ -239,7 +239,7 @@ body {
     border-radius: 3px;
     position: relative;
     left: 490px;
-    top: -266px;
+    top: -190px;
     height: 160px;
     width: 120px;
     background-image: linear-gradient(rgb(255, 255, 255), rgb(154, 178, 189));
@@ -283,7 +283,7 @@ body {
     border-radius: 3px;
     position: relative;
     left: 625px;
-    top: -426px;
+    top: -350px;
     height: 160px;
     width: 120px;
     background-image: linear-gradient(rgb(255, 255, 255), rgb(154, 178, 189));
@@ -327,7 +327,7 @@ body {
     border-radius: 3px;
     position: relative;
     left: 760px;
-    top: -587px;
+    top: -511px;
     height: 160px;
     width: 120px;
     background-image: linear-gradient(rgb(255, 255, 255), rgb(154, 178, 189));
@@ -369,7 +369,7 @@ body {
 
 .att {
     position: relative;
-    top: -575px;
+    top: -498px;
     background: white;
     text-align: center;
     width: 660px;
@@ -389,7 +389,7 @@ body {
     border-radius: 3px;
     position: relative;
     left: 240px;
-    top: -485px;
+    top: -410px;
     height: 280px;
     width: 290px;
     background-image: linear-gradient(rgb(255, 255, 255), rgb(154, 178, 189));
@@ -598,7 +598,7 @@ body {
     border-radius: 3px;
     position: relative;
     left: 570px;
-    top: -765px;
+    top: -691px;
     height: 280px;
     width: 290px;
     background-image: linear-gradient(rgb(255, 255, 255), rgb(154, 178, 189));
@@ -1001,4 +1001,63 @@ body {
     text-align: center;
     font: normal 12pt Arial;
     padding-bottom: 10px;
+}
+
+form {
+    position: absolute;
+    left: 250px;
+    top: 90px;
+    font: normal 10pt Arial;
+
+    & input, textarea, select {
+        width: 124%;
+        padding: 5px;
+        margin-top: 10px;
+        border: none;
+        border-bottom: 1px solid grey;
+        border-radius: 6px;
+        outline: none;
+        font: normal 10pt Arial;
+    }
+
+    & .sendmsg {
+        position: relative;
+        left: 60px;
+        width: 500px;
+        height: 50px;
+        border-radius: 8px;
+        outline: none;
+        border: none;
+        cursor: pointer;
+        margin-top: 10px;
+        background: #1d90f5;
+        color: white;
+        font: bold 12pt Arial;
+    }
+
+    & .sendmsg:hover {
+        background: rgb(255, 0, 0);
+        color: rgb(255, 255, 255);
+        transition: 0.5s linear;
+    }
+
+    & .duvidas {
+        font: bold 12pt Arial;
+        margin-bottom: 8px;
+    }
+
+}
+
+.obg img {
+    position: absolute;
+    width: 200px;
+    left: 440px;
+    top: 40px;
+}
+
+.obg h1 {
+    position: relative;
+    top: 40px;
+    left: 260px;
+    font: bold 21pt Arial;
 }
